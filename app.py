@@ -1,8 +1,19 @@
 import streamlit as st
 import pickle as pkl
 import requests
+import os
+import gdown
+
+if not os.path.exists("movies.pkl"):
+    url = "https://drive.google.com/file/d/1ZE1mC3_7GlCSKrPHbVrhvH0YV0dkrHoW/view?usp=drive_link"
+    gdown.download(url, "movies.pkl", quiet=False)
 
 movies = pkl.load(open("movies.pkl", "rb"))
+
+if not os.path.exists("similarity.pkl"):
+    url = "https://drive.google.com/file/d/1wYcUd0fzQZdbx12vWCF4mx3AaC32JrBq/view?usp=drive_link"
+    gdown.download(url, "similarity.pkl", quiet=False)
+
 similarity = pkl.load(open("similarity.pkl", "rb"))
 
 
