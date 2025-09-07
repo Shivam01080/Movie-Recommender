@@ -23,12 +23,12 @@ The system recommends movies to users based on similarity of content (plot, genr
 ---
 
 ## 📂 Project Structure
-├── app.py # Streamlit app
-├── recommender.py # Core recommendation logic
-├── similarity.pkl # Pre-computed similarity matrix
-├── movies.pkl # Pre-processed movies data
-├── requirements.txt # Dependencies
-└── README.md # Project documentation
+-├── app.py # Streamlit app
+-├── recommender.py # Core recommendation logic
+-├── similarity.pkl # Pre-computed similarity matrix
+-├── movies.pkl # Pre-processed movies data
+-├── requirements.txt # Dependencies
+-└── README.md # Project documentation
 
 ---
 
